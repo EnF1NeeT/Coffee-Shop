@@ -15,6 +15,7 @@ body {
   color: var(--gray);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: var(--dark-white);
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -256,7 +257,6 @@ header .navbar-nav .nav-item .nav-link {
 .explore {
     padding-top: 150px;
     padding-bottom: 190px;
-    background: var(--dark-white);
 }
 
 .explore .container .descr {
@@ -265,9 +265,9 @@ header .navbar-nav .nav-item .nav-link {
 }
 
 .explore .container img {
-    top: 0;
-    left: -10%;
-    z-index: -1;
+  width: 20%;
+    top: 5%;
+    left: -5%;
 }
 
 .explore-card {
@@ -279,17 +279,16 @@ header .navbar-nav .nav-item .nav-link {
     gap: 60px;
     margin-top: 90px;
     transition: all .3s;
+  max-width: 393px;
 }
 .explore-card:hover {
   box-shadow:  30px 30px 43px #b1b2b3,
   -30px -30px 43px #ffffff;
-  z-index: 10;
 }
 
 /*Order*/
 
 .order {
-  background: var(--dark-white);
   padding-bottom: 170px;
 }
 
@@ -306,8 +305,14 @@ header .navbar-nav .nav-item .nav-link {
 /*best*/
 
 .best {
-  background-color: var(--dark-white);
   padding-bottom: 202px;
+}
+
+#blur {
+  top: 0;
+  right: 0;
+  width: 25%;
+  z-index: -1;
 }
 
 .best .container p {
@@ -346,10 +351,6 @@ header .navbar-nav .nav-item .nav-link {
 
 /*Instant*/
 
-.instant {
-  background-color: var(--dark-white);
-}
-
 .instant .container p {
   margin-top: 30px !important;
 }
@@ -358,12 +359,16 @@ header .navbar-nav .nav-item .nav-link {
   margin-top: 60px;
 }
 
+#elips {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin: auto auto;
+}
 
 /*Clients*/
-
-.clients {
-  background-color: var(--dark-white);
-}
 
 .clients h2 {
   margin-bottom: 40px;
@@ -418,7 +423,6 @@ header .navbar-nav .nav-item .nav-link {
 /*Footer*/
 
 footer {
-  background-color: var(--dark-white);
   padding-top: 207px;
 }
 
@@ -474,4 +478,13 @@ footer .container .row:nth-child(3) p {
   line-height: 30px;
   margin: 0;
   padding: 0;
+}
+
+#find {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
 }
